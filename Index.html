@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Montserrat:wght@100;300;700 & display=swap"
+        rel="stylesheet">
+
+    <title>Dev Contábil</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Dev Contábil</h2>
+            <a href="#titulo-inferior"class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio"class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="chameOAbacate()">Contato</a>
+        </div>
+
+        <h1>Dev Contábil</h1>
+
+
+        <form id="formulario-contato" action="https://formsubmit.co/ffeitosa23@hotmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em Contato</h3>
+
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu Nome" required/>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu e-mail" required/>
+            </label>
+ 
+            <label>
+                WhatssApp
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required/>
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual a sua Dúvida?"></textarea>
+            </label>
+
+            <Button typt="submit">Enviar</Button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos Serviços</h2>
+
+    <div class="caixa-central">
+
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade Completa</h3>
+            <ul>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu Negócio</h3>
+            <ul>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+            </ul>
+        </div>
+
+                <div class="card">
+                    <h3 class="titulo-card">Cuidamos de Vocë</h3>
+                    <ul>
+                        <li>Imposto de Renda</li>
+                        <li>Imposto de Renda</li>
+                        <li>Imposto de Renda</li>
+                        <li>Imposto de Renda</li>
+                        <li>Imposto de Renda</li>
+                    </ul>
+                </div>
+            </div>
+
+                    <div class="caixa-inferior">
+                        <h2 id="titulo-inferior">Sobre Nós</h2>
+
+                        <p class="paragrafo-inferior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam at amet accusamus,
+                            beatae alias iste
+                            nesciunt! Deleniti, eum reiciendis ipsum commodi quidem quasi, dolorum repellat dicta
+                            placeat odit cum!
+                        </p>
+                    </div>
+
+
+</body>
+<script>
+
+let formulario = document.getElementById("formulario-contato" )
+
+ 
+
+
+function chameOAbacate(){
+   formulario.className= "mostrar-formulario"
+ }
+
+
+</script>
+</html>
